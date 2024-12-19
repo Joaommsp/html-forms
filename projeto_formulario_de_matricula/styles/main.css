@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+:root {
+  --font-family: "Poppins", serif;
+  --text: 400 1rem/1.5 var(--font-family);
+  --text-sm: 400 0.875/1.4rem var(--font-family);
+
+  --text-primary: #292524;
+  --text-secondary: #57534e;
+  --text-tertiary: #8f8881;
+  --text-highligth: #e43a12;
+
+  --surface-primary: #ffffff;
+  --surface-secondary: #fee7d6;
+
+  --stroke-default: #d6d3d1;
+  --stroke-hightlight: #f3541c;
+  --Semantic-error: #dc2626;
+}
+
+body {
+  background-color: #000000;
+}
