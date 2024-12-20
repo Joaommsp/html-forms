@@ -89,3 +89,75 @@ aside {
     }
   }
 }
+
+/* ============= FORM =============== */
+
+form {
+  margin-top: 3rem;
+}
+
+fieldset {
+  border: none;
+
+  display: grid;
+  gap: 1.5rem;
+}
+
+legend {
+  font: 600 1rem/1.25 var(--font-family);
+  margin-bottom: 1.5rem;
+}
+
+input,
+textarea,
+select {
+  appearance: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--stroke-default);
+
+  padding: 0.75rem 1rem;
+
+  font: var(--text);
+}
+
+label {
+  font: var(--text-sm);
+  color: var(--text-secondary);
+
+  display: block;
+  margin-bottom: 2rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 0.25rem solid var(--surface-primary);
+  border: 0.125rem solid var(--stroke-hightlight);
+  outline-offset: 0.1px;
+}
+
+input[type="date"] {
+  position: relative;
+
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url(../assets/icons/calendar-03.png) center/contain;
+    right: 1rem;
+
+    width: 1.25rem;
+    height: 1.25rem;
+
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+select {
+  background: url(../assets/icons/arrow-down-01.png) no-repeat calc(100% - 1rem);
+}
