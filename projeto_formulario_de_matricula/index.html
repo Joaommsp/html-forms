@@ -30,7 +30,7 @@
           </p>
 
           <form action="" method="post" enctype="multipart/form-data">
-            <fieldset>
+            <fieldset class="child-info">
               <legend>Informações do Aluno</legend>
 
               <div class="input-wrapper">
@@ -100,6 +100,116 @@
                     Clique aqui para <br />
                     selecionar os arquivos
                   </p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="address">
+              <legend>Endereço Residencial</legend>
+
+              <div class="input-wrapper">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" />
+              </div>
+
+              <div class="flex">
+                <div class="input-wrapper flex-2">
+                  <label for="street">Rua</label>
+                  <input
+                    type="text"
+                    id="street"
+                    name="street"
+                    value="Rua do Sol"
+                    disabled
+                  />
+                </div>
+
+                <div class="input-wrapper flex-1">
+                  <label for="number">Número</label>
+                  <input type="number" id="number" name="number" />
+                </div>
+              </div>
+              <div class="flex">
+                <div class="input-wrapper flex-2">
+                  <label for="city">Cidade</label>
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    value="São Paulo"
+                    disabled
+                  />
+                </div>
+
+                <div class="input-wrapper flex-1">
+                  <label for="state">Estado</label>
+                  <input type="text" id="state" name="state" value="SP" />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="gardian">
+              <legend>Informações do responsável</legend>
+
+              <div class="input-wrapper">
+                <label for="gardian">Nome do responsável</label>
+                <input type="text" id="gardian" name="gardian" />
+                <small
+                  >Principal responsável legal e contato de emergência</small
+                >
+              </div>
+
+              <div class="input-wrapper">
+                <label for="phone">Telefone</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="(75) 94002-8922"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="mail">Email</label>
+                <input type="email" name="mail" id="mail" required />
+                <div class="error">
+                  <img src="./assets/icons/alert-circle.svg" alt="" />
+                  <span>Insira um e-mail válido</span>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="enroll-options">
+              <legend>Opções de matrícula</legend>
+
+              <label for="">Selecione um turno de estudo</label>
+
+              <div class="radio-wrapper">
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <input
+                    type="radio"
+                    name="study-shift"
+                    id="morning"
+                    value="morning"
+                  />
+                  <img
+                    src="./assets/icons/sun-cloud-02.png"
+                    alt="Ìcone de sol com nuvem"
+                  />
+                  <label for="morning">Manhã</label>
+                </div>
+
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <input
+                    type="radio"
+                    name="study-shift"
+                    id="evening"
+                    value="evening"
+                  />
+                  <img src="./assets/icons/sun-02.png" alt="Ícone de sol" />
+                  <label for="evening">Tarde</label>
                 </div>
               </div>
             </fieldset>

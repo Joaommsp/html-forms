@@ -17,10 +17,23 @@
 
   --surface-primary: #ffffff;
   --surface-secondary: #fee7d6;
+  --surface-disabled: #e7e5e4;
 
   --stroke-default: #d6d3d1;
   --stroke-hightlight: #f3541c;
   --Semantic-error: #dc2626;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
 }
 
 body {
@@ -101,6 +114,7 @@ form {
 }
 
 fieldset {
+  height: 100%;
   border: none;
   width: 100%;
   max-width: 100%;
@@ -194,7 +208,6 @@ select {
 
   text-align: center;
   padding: 1.75rem 1rem;
-  margin-bottom: 4rem;
 
   position: relative;
 
@@ -224,4 +237,90 @@ select {
       stroke: var(--stroke-hightlight);
     }
   }
+}
+
+/* ========================= ADDRESS =========== */
+
+fieldset + fieldset {
+  margin-top: 3rem;
+}
+
+.gardian {
+  margin-bottom: 100px;
+}
+
+address .flex {
+  gap: 1.25rem;
+}
+
+.input-wrapper:has([disabled]) {
+  opacity: 0.5;
+}
+
+input {
+  &[disabled] {
+    background-color: var(--surface-disabled);
+    border: 1px solid var(--stroke-default);
+    color: var(--text-primary);
+  }
+
+  &:invalid {
+    border: 0.125rem solid var(--Semantic-error);
+  }
+
+  & + small {
+    font: var(--text-sm);
+    color: #78716c;
+
+    display: inline-block;
+    margin-top: 0.25rem;
+  }
+
+  &[required] + .error {
+    align-items: center;
+    display: flex;
+    gap: 0.25rem;
+  }
+
+  &:valid + .error {
+    display: none;
+  }
+}
+
+/* ===================== shift ================= */
+
+label + .radio-wrapper {
+  margin-top: 1rem;
+}
+
+.radio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  gap: 1rem;
+}
+
+.radio-inner {
+  border: 1px solid var(--stroke-default);
+  border-radius: 0.5rem;
+  display: grid;
+  justify-items: center;
+  gap: 0.5rem;
+  padding: 2rem 0.5rem 0.5em;
+
+  position: relative;
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  .radio-image {
+    
+  }
+}
+
+.enroll-options {
+  margin-bottom: 5rem;
 }
