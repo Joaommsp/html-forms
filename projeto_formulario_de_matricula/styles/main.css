@@ -20,7 +20,7 @@
   --surface-disabled: #e7e5e4;
 
   --stroke-default: #d6d3d1;
-  --stroke-hightlight: #f3541c;
+  --stroke-highlight: #f3541c;
   --Semantic-error: #dc2626;
 }
 
@@ -161,7 +161,7 @@ select:focus,
 textarea:focus,
 input[type="date"]:focus-within {
   outline: 0.25rem solid var(--surface-primary);
-  border: 0.125rem solid var(--stroke-hightlight);
+  border: 0.125rem solid var(--stroke-highlight);
   outline-offset: 0.1px;
 }
 
@@ -226,7 +226,7 @@ select {
   &:hover,
   &:has(input:focus) {
     border-width: 2px;
-    border-color: var(--stroke-hightlight);
+    border-color: var(--stroke-highlight);
     background-color: var(--surface-secondary);
 
     & {
@@ -234,7 +234,7 @@ select {
     }
 
     & svg path {
-      stroke: var(--stroke-hightlight);
+      stroke: var(--stroke-highlight);
     }
   }
 }
@@ -317,10 +317,114 @@ label + .radio-wrapper {
   }
 
   .radio-image {
-    
+    background-image: url(../assets/icons/radio-default.svg);
+
+    width: 1.5rem;
+    height: 1.5rem;
+
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+
+  &:hover,
+  &:focus-within {
+    border: 1px solid var(--stroke-highlight);
+
+    & .radio-image {
+      background-image: url(../assets/icons/radio-default-hover.svg);
+    }
+  }
+
+  &:has(:checked) {
+    border: 2px solid var(--stroke-highlight);
+    & .radio-image {
+      background-image: url(../assets/icons/radio-checked.svg);
+    }
   }
 }
 
 .enroll-options {
   margin-bottom: 5rem;
+}
+
+/* ================= TERMS ================ */
+
+.terms-wrapper {
+  margin-top: 3rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+
+  & strong {
+    font-weight: 500;
+    color: var(--text-highligth);
+  }
+}
+
+.checkbox-wrapper {
+  position: relative;
+
+  & [type="checkbox"] {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  .checkbox-image {
+    flex: 0 0 1.5rem;
+    height: 1.5rem;
+
+    background-image: url(../assets/icons/checkbox-default.svg);
+  }
+
+  &:hover,
+  &:focus-within {
+    .checkbox-image {
+      background-image: url(../assets/icons/checkbox-hover.svg);
+    }
+  }
+
+  &:has(:checked) .checkbox-image {
+    background-image: url(../assets/icons/checkbox-checked.svg);
+  }
+}
+
+/* ====================== ACTIONS ================== */
+
+.actions-wrapper {
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  all: unset;
+  font-weight: 500;
+  color: var(--text-highligth);
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+
+  &.btn-primary {
+    color: wheat;
+    background-color: #e43a12;
+
+    &:hover,
+    &:focus {
+      background-color: #f3541c;
+    }
+  }
+
+  &.btn-secundary {
+    margin-left: auto;
+    border: 1px solid var(--text-highligth);
+
+    &:hover,
+    &:focus {
+      color: #e43a12;
+      outline: 0.25rem solid var(--surface-secondary);
+    }
+  }
 }

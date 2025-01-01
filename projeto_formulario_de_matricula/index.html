@@ -182,37 +182,104 @@
             <fieldset class="enroll-options">
               <legend>Opções de matrícula</legend>
 
-              <label for="">Selecione um turno para estudo</label>
+              <div class="input-wrapper">
+                <label for="">Selecione um turno para estudo</label>
 
-              <div class="radio-wrapper">
-                <div class="radio-inner">
-                  <div class="radio-image"></div>
-                  <input
-                    type="radio"
-                    name="study-shift"
-                    id="morning"
-                    value="morning"
-                  />
-                  <img
-                    src="./assets/icons/sun-cloud-02.png"
-                    alt="Ìcone de sol com nuvem"
-                  />
-                  <label for="morning">Manhã</label>
+                <div class="radio-wrapper">
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input
+                      type="radio"
+                      name="study-shift"
+                      id="morning"
+                      value="morning"
+                    />
+                    <img
+                      src="./assets/icons/sun-cloud-02.png"
+                      alt="Ìcone de sol com nuvem"
+                    />
+                    <label for="morning">Manhã</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input
+                      type="radio"
+                      name="study-shift"
+                      id="evening"
+                      value="evening"
+                    />
+                    <img src="./assets/icons/sun-02.png" alt="Ícone de sol" />
+                    <label for="evening">Tarde</label>
+                  </div>
                 </div>
+              </div>
 
-                <div class="radio-inner">
-                  <div class="radio-image"></div>
-                  <input
-                    type="radio"
-                    name="study-shift"
-                    id="evening"
-                    value="evening"
-                  />
-                  <img src="./assets/icons/sun-02.png" alt="Ícone de sol" />
-                  <label for="evening">Tarde</label>
+              <div class="input-wrapper">
+                <label
+                  >Em qual esporte você gostaria de inscrever seu filho?</label
+                >
+
+                <div class="radio-wrapper">
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="football" />
+                    <img src="./assets/icons/football.png" alt="..." />
+                    <label for="football">Futebol</label>
+                  </div>
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="basket" />
+                    <img src="./assets/icons/basketball-02.png" alt="..." />
+                    <label for="basket">Basquete</label>
+                  </div>
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="swim" />
+                    <img src="./assets/icons/swimming.png" alt="..." />
+                    <label for="swim">Natação</label>
+                  </div>
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="yoga" />
+                    <img src="./assets/icons/yoga-02.png" alt="..." />
+                    <label for="yoga">Yoga</label>
+                  </div>
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="volley" />
+                    <img src="./assets/icons/volleyball.png" alt="..." />
+                    <label for="volley">Volley</label>
+                  </div>
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="boxe" />
+                    <img src="./assets/icons/boxing-glove-01.png" alt="..." />
+                    <label for="boxe">Volley</label>
+                  </div>
                 </div>
               </div>
             </fieldset>
+
+            <div class="terms-wrapper input-wrapper checkbox-wrapper">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="terms" id="terms" />
+
+              <label for="terms"
+                >Declaro que li e concordo com os
+                <strong> Termos e Condições</strong> e com a Política de
+                <strong> Privacidade</strong> Privacidade da escola Estrela do
+                Amanhã.
+              </label>
+            </div>
+
+            <div class="actions-wrapper">
+              <button class="btn-secundary" type="button">
+                Salvar Respostas
+              </button>
+
+              <button class="btn-primary" type="submit">Fazer Matrícula</button>
+            </div>
           </form>
         </div>
       </main>
