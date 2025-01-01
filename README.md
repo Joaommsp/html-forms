@@ -27,5 +27,5 @@
 
 ### 🔗 Deploy
 
-<a href="https://tailwind-css-learnings.vercel.app/home">Confira aqui o projeto</a>
+<a href="https://html-forms-seven.vercel.app/">Confira aqui o projeto</a>
 
