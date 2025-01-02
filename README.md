@@ -29,6 +29,16 @@
 
 <a href="https://html-forms-seven.vercel.app/">Confira aqui o projeto</a>
 
+### Formulário de cadastro
+
+<img src="./public/MacBook Pro-1735857904712.jpeg" alt="..." />
+</div>
+
+### 🔗 Deploy
+
+<a href="https://html-forms-seven.vercel.app/">Confira aqui o projeto</a>
+
+
 ### Anotações 
 
 **Sempre** devemos usar uma label para um input, seja ela oculta ou não, pois os leitores de tela não leem os placeholders.
@@ -94,3 +104,4 @@ elemento selecionado estiver em foco, nesse caso dentro do input[type="date"]
 ```
 
 </aside>
+

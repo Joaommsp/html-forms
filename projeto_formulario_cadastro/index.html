@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-banner">
+        <img src="./assets/img/shopp-banner.svg" alt="" />
+      </div>
+      <div class="form">
+        <form action="#">
+          <div class="form-header">
+            <div class="title">
+              <h1>Cadastre-se</h1>
+            </div>
+            <div class="login-button">
+              <button><a href="#">Entrar</a></button>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div class="input-wrapper">
+              <label for="firstname">Primeiro nome</label>
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="Digite seu primeiro nome"
+                required
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="lastname">Sobrenome</label>
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="Digite seu sobrenome"
+                required
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Digite seu email"
+                required
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="phone">Telefone</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="(00) 0000-0000"
+                required
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="password">Senha</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Digite sua senha"
+                required
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="password-conf">Confirmação de Senha</label>
+              <input
+                type="password"
+                name="password-conf"
+                id="password-conf"
+                placeholder="Confirme sua senha"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="gender-inputs">
+            <div class="gender-title">Gênero</div>
+
+            <div class="gender-group">
+              <div class="radio-wrapper">
+                <input type="radio" name="gender" id="female" />
+                <label for="female">Feminino</label>
+              </div>
+              <div class="radio-wrapper">
+                <input type="radio" name="gender" id="male" />
+                <label for="male">Masculino</label>
+              </div>
+              <div class="radio-wrapper">
+                <input type="radio" name="gender" id="others" />
+                <label for="others">Outros</label>
+              </div>
+              <div class="radio-wrapper">
+                <input type="radio" name="gender" id="none" />
+                <label for="none">Prefiro não dizer</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="continue-button">
+            <button><a href="#">Continuar</a></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
