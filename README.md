@@ -36,7 +36,7 @@
 
 ### 🔗 Deploy
 
-<a href="https://html-forms-seven.vercel.app/">Confira aqui o projeto</a>
+<a href="https://html-forms-kk7f.vercel.app/">Confira aqui o projeto</a>
 
 
 ### Anotações 
